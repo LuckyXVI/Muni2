@@ -2398,62 +2398,78 @@ a.fg-light:hover, a.fg-light:focus {
 .owl-carousel button.owl-dot.active {
   background-color: #2F89FC;
 }
-/* Media Queries generales para pantallas grandes (escritorio) */
-@media (min-width: 1200px) {
+/* Meta tag recomendado para dispositivos móviles en HTML */
+@media (max-width: 768px) {
+  /* Para dispositivos con un ancho máximo de 768px (pantallas móviles y pequeñas) */
+  body {
+    font-size: 16px; /* Tamaño base de fuente en móviles */
+  }
+
   #banner {
-      height: 400px; /* Altura para pantallas grandes */
-      background-size: cover; /* Asegura que la imagen cubra todo el banner */
+    height: 180px; /* Ajusta la altura para pantallas más pequeñas */
+    background-size: cover;
   }
 
   .table-container {
-      width: 80%; /* Ajuste del contenedor de la tabla para pantallas grandes */
+    width: 90%;
+  }
+
+  th, td {
+    font-size: 1em;
   }
 }
 
-/* Ajustes para pantallas medianas (tabletas en orientación horizontal) */
+/* Para pantallas medianas (tabletas y pantallas más grandes, en modo vertical) */
 @media (max-width: 1199px) and (min-width: 769px) {
   #banner {
-      height: 300px; /* Altura ajustada para tabletas y pantallas medianas */
-      background-size: cover;
+    height: 250px;
+    background-size: cover;
   }
 
   .table-container {
-      width: 90%; /* Ajuste del contenedor de la tabla */
+    width: 90%;
   }
 
   th, td {
-      font-size: 1.2em; /* Ajuste de fuente para pantallas medianas */
+    font-size: 1.1em;
   }
 }
 
-/* Ajustes para pantallas pequeñas (smartphones en orientación vertical) */
-@media (max-width: 768px) {
+/* Ajuste para pantallas grandes (escritorio y pantallas mayores a 1200px) */
+@media (min-width: 1200px) {
   #banner {
-      height: 180px; /* Ajuste de la altura para pantallas más pequeñas */
-      background-size: cover; /* Hace que la imagen se ajuste de forma proporcional */
+    height: 400px;
+    background-size: cover;
   }
 
   .table-container {
-      width: 90%; /* Ajuste del tamaño de la tabla */
+    width: 80%;
   }
 
   th, td {
-      font-size: 1em; /* Reducción del tamaño de la fuente */
+    font-size: 1.2em;
   }
 }
 
-/* Ajustes para pantallas muy pequeñas (smartphones en orientación vertical) */
-@media (max-width: 480px) {
+/* Específico para dispositivos móviles y cambio de orientación */
+@media (orientation: portrait) {
+  /* Cuando el dispositivo está en orientación vertical */
   #banner {
-      height: 150px; /* Ajuste de la altura para pantallas más pequeñas aún */
-      background-size: cover;
+    height: 180px;
   }
 
   .table-container {
-      width: 100%; /* Se expande al 100% */
+    width: 90%;
+  }
+}
+
+@media (orientation: landscape) {
+  /* Cuando el dispositivo está en orientación horizontal */
+  #banner {
+    height: 250px;
   }
 
-  th, td {
-      font-size: 0.9em; /* Fuente más pequeña */
+  .table-container {
+    width: 95%;
   }
 }
