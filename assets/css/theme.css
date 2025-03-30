@@ -2500,3 +2500,14 @@ a.fg-light:hover, a.fg-light:focus {
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
   }
 }
+/* Evitar que el número cambie de color al ser seleccionado */
+.phone-number {
+  cursor: pointer;
+  color: inherit; /* Mantener el color del texto original */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Opcional: Personalizar la apariencia si deseas que se vea como texto normal */
+.phone-number:focus {
+  outline: none; /* Evitar el borde de enfoque al hacer clic */
+}
