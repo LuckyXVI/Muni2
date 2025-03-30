@@ -2398,29 +2398,62 @@ a.fg-light:hover, a.fg-light:focus {
 .owl-carousel button.owl-dot.active {
   background-color: #2F89FC;
 }
-/* Media Queries para dispositivos móviles */
+/* Media Queries generales para pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+  #banner {
+      height: 400px; /* Altura para pantallas grandes */
+      background-size: cover; /* Asegura que la imagen cubra todo el banner */
+  }
+
+  .table-container {
+      width: 80%; /* Ajuste del contenedor de la tabla para pantallas grandes */
+  }
+}
+
+/* Ajustes para pantallas medianas (tabletas en orientación horizontal) */
+@media (max-width: 1199px) and (min-width: 769px) {
+  #banner {
+      height: 300px; /* Altura ajustada para tabletas y pantallas medianas */
+      background-size: cover;
+  }
+
+  .table-container {
+      width: 90%; /* Ajuste del contenedor de la tabla */
+  }
+
+  th, td {
+      font-size: 1.2em; /* Ajuste de fuente para pantallas medianas */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (smartphones en orientación vertical) */
 @media (max-width: 768px) {
   #banner {
-      height: 180px; /* Ajusta la altura para pantallas más pequeñas */
-      background-size: 100%; /* Ajusta el tamaño de la imagen para que se ensanche más */
+      height: 180px; /* Ajuste de la altura para pantallas más pequeñas */
+      background-size: cover; /* Hace que la imagen se ajuste de forma proporcional */
   }
-}
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
+
   .table-container {
-      width: 90%;
+      width: 90%; /* Ajuste del tamaño de la tabla */
   }
 
   th, td {
-      font-size: 1em;
+      font-size: 1em; /* Reducción del tamaño de la fuente */
   }
 }
+
+/* Ajustes para pantallas muy pequeñas (smartphones en orientación vertical) */
 @media (max-width: 480px) {
+  #banner {
+      height: 150px; /* Ajuste de la altura para pantallas más pequeñas aún */
+      background-size: cover;
+  }
+
   .table-container {
-      width: 100%;
+      width: 100%; /* Se expande al 100% */
   }
 
   th, td {
-      font-size: 0.9em;
+      font-size: 0.9em; /* Fuente más pequeña */
   }
 }
