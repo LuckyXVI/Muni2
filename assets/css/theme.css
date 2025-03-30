@@ -2399,3 +2399,21 @@ a.fg-light:hover, a.fg-light:focus {
   background-color: #2F89FC;
 }
 /*# sourceMappingURL=theme.css.map */
+@media (max-width: 576px) {
+  .navbar-nav {
+    display: none; /* Ocultar la barra de navegación en pantallas muy pequeñas, si es necesario */
+  }
+}
+.carousel-item img {
+  width: 100%; /* Asegúrate de que las imágenes ocupen todo el ancho del contenedor */
+  height: auto; /* Mantén la proporción original de las imágenes */
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center; /* Centra los enlaces de la barra de navegación en pantallas pequeñas */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Las imágenes en el carrusel ocupan todo el ancho en pantallas pequeñas */
+  }
+}
