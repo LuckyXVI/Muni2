@@ -2398,102 +2398,39 @@ a.fg-light:hover, a.fg-light:focus {
 .owl-carousel button.owl-dot.active {
   background-color: #2F89FC;
 }
-/* Meta tag recomendado para dispositivos móviles en HTML */
+/* Asegúrate de que el texto "Inicio" sea visible y accesible */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Alinea la imagen y el texto verticalmente */
+  font-size: 1.25rem;  /* Ajusta el tamaño del texto */
+}
+
+.navbar-text {
+  font-size: 1.25rem;  /* Tamaño de fuente más grande en pantallas más pequeñas */
+  color: #333; /* Color del texto (ajustable) */
+  margin-left: 10px;  /* Espaciado entre la imagen y el texto */
+}
+
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-  /* Para dispositivos con un ancho máximo de 768px (pantallas móviles y pequeñas) */
-  body {
-    font-size: 16px; /* Tamaño base de fuente en móviles */
+  .navbar-text {
+    font-size: 1.1rem; /* Ajusta el tamaño de fuente en pantallas pequeñas */
   }
 
-  #banner {
-    height: 180px; /* Ajusta la altura para pantallas más pequeñas */
-    background-size: cover;
-  }
-
-  .table-container {
-    width: 90%;
-  }
-
-  th, td {
-    font-size: 1em;
-  }
-}
-/* General */
-body {
-  font-size: 16px; /* Tamaño base de fuente */
-}
-
-#banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Media Query para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  /* Ajustar las imágenes del banner */
-  .hero-carousel-item img {
-    width: 100%; /* Asegura que la imagen del carrusel ocupe todo el ancho */
-    height: auto;
-  }
-
-  /* Ajustar el texto del banner */
-  .img-caption h1 {
-    font-size: 1.5rem; /* Ajustar el tamaño de fuente para móviles */
-  }
-
-  /* Ajustar la navegación */
-  .navbar-nav {
-    text-align: center; /* Centrar los elementos de la barra de navegación */
-  }
-
-  /* Ajuste para el carrusel */
-  .carousel-item img {
-    width: 100%; /* Asegura que las imágenes del carrusel ocupen todo el ancho */
-    height: auto;
-  }
-
-  /* Ajuste de márgenes en los servicios */
-  .col-md-6 {
-    margin-bottom: 15px;
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
   }
 }
 
-/* Media Query para pantallas medianas (tabletas y pantallas en modo vertical) */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .navbar-nav {
-    text-align: center;
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-text {
+    font-size: 1.5rem;  /* Aumenta el tamaño de texto en pantallas grandes */
   }
 
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .page-section .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/* Media Query para pantallas grandes (escritorios) */
-@media (min-width: 1200px) {
-  .carousel-item img {
-    width: 70%;
-    height: auto;
-  }
-
-  .navbar-nav {
-    text-align: left;
-  }
-  
-  .page-section .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  /* Ajuste de las imágenes de servicios */
-  .col-md-6, .col-lg-4, .col-xl-3 {
-    padding: 20px;
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
   }
 }
