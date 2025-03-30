@@ -2435,4 +2435,68 @@ a.fg-light:hover, a.fg-light:focus {
     height: 40px;
   }
 }
+/* Contenedor general de la sección */
+#emergencias {
+  background-color: #f4f4f4; /* Fondo suave */
+  padding: 15px 0; /* Padding compacto */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa todo el ancho de la página */
+  margin: 0 auto; /* Centrado */
+}
 
+/* Título de la sección */
+.emergencias-titulo {
+  font-size: 1.5rem; /* Tamaño más pequeño */
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px; /* Reducir el margen */
+  text-align: center;
+}
+
+/* Contenedor de los items */
+.emergencias-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 15px; /* Espacio entre los items */
+  max-width: 1200px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrado */
+}
+
+/* Estilo para cada item de emergencia */
+.emergencia-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 1rem; /* Fuente cómoda */
+}
+
+.emergencia-item h3 {
+  font-size: 1rem; /* Fuente más pequeña */
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.emergencia-item p a {
+  color: #007bff;
+  font-size: 1rem; /* Reducción de tamaño */
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-top: 5px;
+}
+
+.emergencia-item p a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .emergencias-contenedor {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+  }
+}
