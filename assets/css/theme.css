@@ -2418,58 +2418,82 @@ a.fg-light:hover, a.fg-light:focus {
     font-size: 1em;
   }
 }
+/* General */
+body {
+  font-size: 16px; /* Tamaño base de fuente */
+}
 
-/* Para pantallas medianas (tabletas y pantallas más grandes, en modo vertical) */
-@media (max-width: 1199px) and (min-width: 769px) {
-  #banner {
-    height: 250px;
-    background-size: cover;
+#banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  /* Ajustar las imágenes del banner */
+  .hero-carousel-item img {
+    width: 100%; /* Asegura que la imagen del carrusel ocupe todo el ancho */
+    height: auto;
   }
 
-  .table-container {
-    width: 90%;
+  /* Ajustar el texto del banner */
+  .img-caption h1 {
+    font-size: 1.5rem; /* Ajustar el tamaño de fuente para móviles */
   }
 
-  th, td {
-    font-size: 1.1em;
+  /* Ajustar la navegación */
+  .navbar-nav {
+    text-align: center; /* Centrar los elementos de la barra de navegación */
+  }
+
+  /* Ajuste para el carrusel */
+  .carousel-item img {
+    width: 100%; /* Asegura que las imágenes del carrusel ocupen todo el ancho */
+    height: auto;
+  }
+
+  /* Ajuste de márgenes en los servicios */
+  .col-md-6 {
+    margin-bottom: 15px;
   }
 }
 
-/* Ajuste para pantallas grandes (escritorio y pantallas mayores a 1200px) */
+/* Media Query para pantallas medianas (tabletas y pantallas en modo vertical) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .page-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Media Query para pantallas grandes (escritorios) */
 @media (min-width: 1200px) {
-  #banner {
-    height: 400px;
-    background-size: cover;
+  .carousel-item img {
+    width: 70%;
+    height: auto;
   }
 
-  .table-container {
-    width: 80%;
+  .navbar-nav {
+    text-align: left;
+  }
+  
+  .page-section .container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  th, td {
-    font-size: 1.2em;
-  }
-}
-
-/* Específico para dispositivos móviles y cambio de orientación */
-@media (orientation: portrait) {
-  /* Cuando el dispositivo está en orientación vertical */
-  #banner {
-    height: 180px;
-  }
-
-  .table-container {
-    width: 90%;
-  }
-}
-
-@media (orientation: landscape) {
-  /* Cuando el dispositivo está en orientación horizontal */
-  #banner {
-    height: 250px;
-  }
-
-  .table-container {
-    width: 95%;
+  /* Ajuste de las imágenes de servicios */
+  .col-md-6, .col-lg-4, .col-xl-3 {
+    padding: 20px;
   }
 }
