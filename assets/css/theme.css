@@ -2398,16 +2398,17 @@ a.fg-light:hover, a.fg-light:focus {
 .owl-carousel button.owl-dot.active {
   background-color: #2F89FC;
 }
-/* Asegúrate de que el texto "Inicio" sea visible y accesible */
+/* Asegúrate de que el logo y el texto estén alineados a la izquierda */
 .navbar-brand {
   display: flex;
   align-items: center; /* Alinea la imagen y el texto verticalmente */
   font-size: 1.25rem;  /* Ajusta el tamaño del texto */
+  margin-right: auto;  /* Esto empuja todo el contenido del menú a la derecha */
 }
 
 .navbar-text {
   font-size: 1.25rem;  /* Tamaño de fuente más grande en pantallas más pequeñas */
-  color: #333; /* Color del texto (ajustable) */
+  color: #333; /* Color del texto */
   margin-left: 10px;  /* Espaciado entre la imagen y el texto */
 }
 
