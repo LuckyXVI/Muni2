@@ -2398,16 +2398,8 @@ a.fg-light:hover, a.fg-light:focus {
 .owl-carousel button.owl-dot.active {
   background-color: #2F89FC;
 }
-/* Ocultar los elementos de la barra de navegación en pantallas pequeñas */
-@media (max-width: 768px) {
-  .navbar-nav {
-    display: none; /* Ocultar la barra de navegación en pantallas pequeñas */
-  }
 
-  /* Asegúrate de que el toggle de la navbar funcione */
-  .navbar-toggler {
-    display: block; /* Asegúrate de que el botón de toggle sea visible */
-  }
+
 
   /* Centrar los elementos de la barra de navegación en pantallas más grandes */
   .navbar-nav {
