@@ -2399,11 +2399,6 @@ a.fg-light:hover, a.fg-light:focus {
   background-color: #2F89FC;
 }
 /*# sourceMappingURL=theme.css.map */
-
-
-
-
-
 /*MENUUUU*/
 
 ul { list-style: none; }
@@ -2531,3 +2526,61 @@ transition: all 0.3s ease;
   opacity: 0;
 }
 
+/* Estilo general para el contenedor */
+.emergencias-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Estilo para cada item de emergencia */
+.emergencia-item {
+  background-color: #f8f9fa; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: calc(50% - 10px); /* Dos elementos por fila */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo de los títulos de cada sección */
+.emergencia-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces (números de emergencia) */
+.emergencia-item a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.emergencia-item a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Efecto de hover para los items */
+.emergencia-item:hover {
+  transform: translateY(-5px); /* Sube un poco al pasar el ratón */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al pasar el ratón */
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .emergencia-item {
+    width: 100%; /* Cada item ocupa toda la fila en pantallas pequeñas */
+  }
+}
+
+.emergencias-titulo {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
