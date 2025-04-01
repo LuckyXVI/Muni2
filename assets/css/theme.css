@@ -2528,34 +2528,34 @@ transition: all 0.3s ease;
 
 /* Estilo general para el contenedor */
 .emergencias-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+  gap: 15px;
   margin-top: 20px;
 }
 
 /* Estilo para cada item de emergencia */
 .emergencia-item {
-  background-color: #f8f9fa; /* Fondo claro */
-  border: 1px solid #ddd; /* Borde gris claro */
-  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc; /* Borde gris más tenue */
+  padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  width: calc(50% - 10px); /* Dos elementos por fila */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Centrado de texto */
+  font-size: 0.9rem; /* Reducir el tamaño de fuente */
 }
 
 /* Estilo de los títulos de cada sección */
 .emergencia-item h3 {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Título más pequeño */
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* Estilo para los enlaces (números de emergencia) */
 .emergencia-item a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
@@ -2568,19 +2568,28 @@ transition: all 0.3s ease;
 
 /* Efecto de hover para los items */
 .emergencia-item:hover {
-  transform: translateY(-5px); /* Sube un poco al pasar el ratón */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al pasar el ratón */
+  transform: translateY(-3px); /* Suave subida al pasar el ratón */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra un poco más fuerte */
 }
 
 /* Estilo para pantallas más pequeñas */
 @media (max-width: 768px) {
+  .emergencias-contenedor {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, todo en una columna */
+  }
+
   .emergencia-item {
-    width: 100%; /* Cada item ocupa toda la fila en pantallas pequeñas */
+    padding: 8px; /* Menos padding en pantallas pequeñas */
+  }
+
+  .emergencia-item h3 {
+    font-size: 0.9rem; /* Títulos más pequeños en pantallas pequeñas */
   }
 }
 
+/* Estilo del título principal */
 .emergencias-titulo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #333;
   margin-bottom: 20px;
 }
