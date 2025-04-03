@@ -28,6 +28,10 @@
 
 </head>
 <body>
+
+
+  
+  <!--barra de navegacion-->
 <!-- Back to top button -->
 <div class="back-to-top"></div>
 <header>
@@ -67,6 +71,48 @@
 
 
 <style>
+
+/*estilo de el menú*/
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(175, 183, 193, 0.7);
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  z-index: 1100;
+}
+
+.back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -4px auto;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #555;
+  border-right: 2px solid #555;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.back-to-top:hover {
+  background: #2F89FC;
+}
+
+.back-to-top:hover::after {
+  border-color: #fff;
+}
+
+
+
 
     /*TITULO DE LA SECCIÓN*/
     #identi-titulo {
