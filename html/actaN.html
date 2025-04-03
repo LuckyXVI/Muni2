@@ -29,40 +29,48 @@
 </head>
 <body>
 
-  <header>
+ <header>
+    <div class="back-to-top"></div>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a href="index.html" class="navbar-brand"></a>
-
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">Conócenos</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a href="portfolio.html" class="nav-link">Transparencia</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">DIF</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://omast.com.mx/" class="nav-link">OMAST</a>
-            </li>
-          </ul>
+        <div class="container">
+            <a href="../index.html" class="navbar-brand pt-3 pt-lg-0">
+                <img src="../assets/img/tala-gob.png" alt="Gobierno de Tala" width="50" height="50" class="d-inline-block align-top">
+                <span class="navbar-text">Inicio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+                    <li class="nav-item">
+                        <a href="conocenos.html" class="nav-link">Conócenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="transparencia.html" class="nav-link">Transparencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">DIF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://omast.com.mx/" class="nav-link">OMAST</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div> <!-- .container -->
-    </nav> <!-- .navbar -->
-  </header>
+    </nav>
+    <div class="page-banner bg-img bg-img-parallax overlay-dark" style="background-image: url('../assets/img/image (1).png');">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-lg-8">
+                    <h1 class="fg-white text-center">Acta De Defunción</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
 
 <style>
@@ -237,6 +245,15 @@
   margin-left: 0%; /* Sin desplazamiento */
   list-style-position: inside; /* Ajuste del marcador */
 }
+
+        /* Media Queries para Responsividad */
+        @media (max-width: 1200px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
   </style>
 
 
@@ -354,6 +371,9 @@
 </footer>
 
 
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Requerido por Bootstrap 4 y 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
