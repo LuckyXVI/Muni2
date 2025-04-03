@@ -22,19 +22,28 @@
         }
 
         .titulo {
-            color: #f43f06;
+            font-size: 250%; 
+    color: #F28705; 
+    text-align: center; 
+    margin: 0 auto; 
+    width: 60%; 
+    line-height: 1.5; 
+    word-wrap: break-word; 
+    font-weight: 800;
         }
 
         .informacion1 {
-            font-size: 200%;
             color: black;
+            margin-left: 5%;
+       font-size: 107%;
+       font-family: 'Lucida Sans', sans-serif;
         }
 
         .titulo-cartilla {
             color: #2c7c6c;
-            font-size: 20px;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
+            font-size: 110%;
         }
 
         .titulo-cartilla:hover,
@@ -104,6 +113,9 @@
 
             .title-sectionn {
                 font-size: 90%;
+                margin-left: 5%;
+       font-size: 107%;
+       font-family: 'Lucida Sans', sans-serif;
             }
 
             #info {
@@ -133,6 +145,34 @@
             width: 50%;
             margin-left: -50%;
         }
+        #info2{
+            display: none;
+            margin-top: 10px;
+            border:  1px solid red;
+            padding: 50px;
+            width: 50%;
+            margin-left: -50%;
+            
+        }
+
+        .texto2, .texto3 {
+            display: block;
+            margin-bottom: 10px; /* Espacio entre los elementos */
+            font-size: 89%;
+       font-family: 'Lucida Sans', sans-serif;
+       text-align: justify;
+        }
+
+
+
+
+
+
+
+
+
+
+        
     </style>
 </head>
 <body>
@@ -184,9 +224,9 @@
 
 <center>
     <h1 class="titulo">Registro de defunción</h1>
-    <hr width="40%" color="black">
+    <hr width="35%" color="black">
     <p class="informacion1">Facilita la difusión y la formalización del fallecimiento de una persona.</p>
-    <hr width="60%" color="black">
+    <hr width="35%" color="white">
 </center>
 
 <!-- Primer apartado (ya existente) -->
@@ -194,7 +234,7 @@
     <a href="#" id="toggle1" class="titulo-cartilla"><span>&#43;</span> ¿Quién puede solicitar el trámite?</a>
 </center>
 <br>
-<div  id="info1" style="display: none; margin-top: 20px; width: 70%; margin-left: 17%; border-color: #bbbbbb;">
+<div  id="info1" style="display: none; margin-top: 20px; width: 70%; margin-left: 17%; border-color: black;">
     <ul style="display: flex; justify-content: space-between; padding: 0; flex-wrap: wrap;">
         <li style="flex: 1; margin-right: 20px;">
             <p class="title-sectionn">
@@ -222,71 +262,29 @@
     <a href="#" id="toggle2" class="titulo-cartilla"><span>&#43;</span> Listado de requisitos</a>
 </center>
 <br>
-<div id="info2" style="display: none; margin-top: 20px; width: 70%; margin-left: 17%; border-color: #bbbbbb;">
-    <ul style="display: flex; justify-content: space-between; padding: 0; flex-wrap: wrap;">
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Formato</span>
-              
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Certificado médico de defunción</span>
-              
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Acta de nacimiento</span>
-              <br>
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Identificación oficial
-                </span>
-              
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Acta de matrimonio</span>
-              
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Propuesta del cementerio</span>
-              
-        </li>
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Oficio del Ministerio Público en caso de muerte violenta
-                </span>
-              
-        </li>
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Oficio de Secretaria de Salud si el cuerpo tiene mas de 48 horas de haber fallecido
-                </span>
-              
-        </li>
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary"></span>
-              
-        </li>
-        </li>
-        <li style="flex: 1; margin-right: 20px;">
-            <p class="title-sectionn">
-                <span class="pg-primary">Acta de defunción
-                </span>
-              
-        </li>
-      
-    </ul>
+<div id="info2" style="display: none; margin-top: 20px; width: 70%; margin-left: 17%; border-color: black;">
+    <div class="contenedor">
+        <p class="texto2">° Formato</p>
+        <br>
+        <p class="texto2">° Certificado médico de defunción</p>
+        <br>
+        <p class="texto2">° Acta de nacimiento</p>
+        <br>
+        <p class="texto2">° Identificación oficial</p>
+        <br>
+        <p class="texto2">° Acta de matrimonio</p>
+        <br>
+        <p class="texto3">° Identificación oficial</p>
+        <br>
+        <p class="texto3">° Propuesta del cementerio</p>
+        <br>
+        <p class="texto2">° Oficio del Ministerio Público en caso de muerte violenta</p>
+        <br>
+        <p class="texto2">° Oficio de Secretaria de Salud si el cuerpo tiene más de 48 horas de haber fallecido</p>
+        <br>
+        <p class="texto2">° Acta de defunción</p>
+    </div>
 </div>
-
-<br>
 
 <script>
     // Toggle 1 (¿Quién puede solicitar el trámite?)
@@ -326,7 +324,56 @@
     });
 </script>
 
-<hr id="hr-2" width="80%" color="black">
+<hr id="hr-2" width="80%" color="white">
+
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 py-3">
+          <h5>Presidencia Municipal</h5>
+          <a href="https://maps.app.goo.gl/Sq35TPc6cVRxh6jFA">Ramón Corona #5, colonia Centro, Tala, Jalisco.</a>
+          <p><a href="tel:3846905100">384 690 5100</a></p>  
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Centro Administrativo Tala (CAT)</h5>
+          <a href="https://maps.app.goo.gl/1MDestAMTxHizZm56">AV. Juarez #143, Colonia san francisco, Tala, Jalisco.<a/>     
+            <p><a href="tel:3846905100">384 690 5100</a></p>  
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Registro civil</h5>
+          <a href="https://maps.app.goo.gl/e3qwJPPcTaT9FkiJ7">Hidalgo #47, colonia Centro, Tala, Jalisco.</a>
+          <p><a href="tel:3846905100">384 690 5100</a></p>          
+        </div>
+  
+  
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>© 2025 Gobierno Municipal de Tala, Jalisco. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-right">
+          <div class="sosmed-button">
+            <a href="https://www.facebook.com/GobiernoDeTala"><span class="mai-logo-facebook-f"></span></a>
+            <a href="https://x.com/GobiernoDeTala"><span class="mai-logo-twitter"></span></a>
+            <a href="https://www.instagram.com/gobiernodetala"><span class="mai-logo-instagram"></span></a>
+            <a href="https://www.youtube.com/@gobiernodetala9477"><span class="mai-logo-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
