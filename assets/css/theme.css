@@ -2593,3 +2593,925 @@ transition: all 0.3s ease;
   color: #333;
   margin-bottom: 20px;
 }
+
+
+
+
+
+
+/* ESTILOS DEL APARTADO RECLUTAMIENTO */
+.resaltar {
+  color: #4c9e0d;
+  font-size: 110%;
+}
+
+.titulo-reclutar {
+  color: #ff9f15;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-top: -18px;
+}
+
+.titulo-cartilla {
+  color: #08bfcc;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.titulo-cartilla:hover,
+.titulo-cartilla:focus {
+  color: green;
+  text-decoration: none;
+}
+
+#hr-2 {
+  display: flex;
+}
+
+.spann {
+  content: "\002B";
+}
+
+.active {
+  color: green; /* Texto en verde cuando está desplegado */
+}
+
+.blue {
+  color: #08bfcc; /* Texto en azul cuando está oculto */
+}
+
+.pg-primary {
+  color: #4c9e0d;
+  font-size: 110%;
+}
+
+.pj-primary {
+  color: #4c9e0d;
+  font-size: 110%;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  gap: 15px;
+  background-color: white;
+}
+
+.info-item {
+  background-color: white;
+  border: 1px solid #bbbb;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px; /* Ancho del cuadro */
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.info-item h5 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-item a {
+  font-family: Arial, sans-serif;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+.info-item p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+#info {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid #6a6767;
+  padding: 10px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info-item {
+  flex: 1;
+  max-width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .info-item {
+    width: 45%; /* Ajuste para pantallas medianas */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    width: 90%; /* Ajuste para pantallas más pequeñas */
+    margin-bottom: 15px;
+  }
+
+  .info-container {
+    justify-content: center;
+  }
+
+  .titulo-cartilla {
+    font-size: 18px; /* Reducción del tamaño de fuente */
+  }
+
+  .titulo-reclutar {
+    font-size: 22px; /* Reducción del tamaño de fuente */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-cartilla {
+    font-size: 16px; /* Aún más pequeño para pantallas pequeñas */
+  }
+
+  .titulo-reclutar {
+    font-size: 18px; /* Aún más pequeño para pantallas pequeñas */
+  }
+
+  .info-item {
+    width: 100%; /* Los ítems ocupan el 100% del ancho en pantallas muy pequeñas */
+    margin-bottom: 20px; /* Añadir margen entre ítems */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS DE LA ACTA DE NACIMIENTO */
+
+/* Título */
+.titulo-registro {
+  margin-left: 15%;
+  font-size: 170%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+/* Información de la acta */
+.info-acta, .info-acta2 {
+  color: rgb(91, 88, 88);
+  margin-left: 5%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Subtítulo */
+.subtitulo-solicitud {
+  color: #434343;
+  font-size: 123%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-left: -50%;
+}
+
+.subtitulo-solicitud:hover,
+.subtitulo-solicitud:focus {
+  color: #3e87ff;
+  text-decoration: none;
+}
+
+/* Activación del texto */
+.active {
+  color: #3e87ff; /* Texto en azul cuando está desplegado */
+}
+
+.blue {
+  color: #434343; /* Texto en azul cuando está oculto */
+}
+
+/* Línea horizontal */
+#hr-acta {
+  width: 70%;
+  height: 2%;
+  margin-left: 4%;
+}
+
+#info {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid #6a6767;
+  padding: 10px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info-item {
+  flex: 1;
+  max-width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Otra línea horizontal */
+#hr-quien {
+  width: 29%;
+  height: 2%;
+  margin-left: 11%;
+}
+
+#acta-titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 235%;
+  color: #ff9f15;
+}
+
+/* Título */
+.titulo-registro {
+  margin-left: 15%;
+  font-size: 170%;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+}
+
+/* Información de la acta */
+.info-acta,
+.info-acta2 {
+  color: rgb(91, 88, 88);
+  margin-left: 5%;
+  font-size: 107%;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.info-acta2 {
+  margin-top: 0%;
+}
+
+/* Subtítulo */
+.subtitulo {
+  color: #434343;
+  font-size: 123%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-left: -49%;
+}
+
+.subtitulo:hover,
+.subtitulo:focus {
+  color: #3e87ff;
+  text-decoration: none;
+}
+
+.title-sectionnN {
+  color: #fd7e14;
+  font-size: 150%;
+}
+
+/* Información */
+.info {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 50%;
+  margin-left: -20%;
+}
+
+/* Media Queries Responsivos */
+
+/* Cuando la pantalla es más pequeña que 768px (típicamente tablets o móviles) */
+@media (max-width: 768px) {
+  .titulo-registro {
+    margin-left: 0;
+    font-size: 140%;
+  }
+
+  .info-acta, .info-acta2 {
+    margin-left: 2%;
+    font-size: 100%;
+  }
+
+  .subtitulo-solicitud {
+    margin-left: 0;
+    font-size: 100%;
+  }
+
+  .subtitulo {
+    margin-left: 0;
+    font-size: 100%;
+  }
+
+  #hr-acta {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #hr-quien {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-item {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .info {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .title-sectionnN {
+    font-size: 130%;
+  }
+}
+
+/* Cuando la pantalla es más pequeña que 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .titulo-registro {
+    font-size: 120%;
+  }
+
+  .info-acta, .info-acta2 {
+    font-size: 90%;
+  }
+
+  .subtitulo-solicitud {
+    font-size: 90%;
+  }
+
+  .subtitulo {
+    font-size: 90%;
+  }
+
+  #hr-acta {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #hr-quien {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .info-item {
+    max-width: 100%;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .title-sectionnN {
+    font-size: 120%;
+  }
+}
+
+
+
+
+
+
+
+
+ 
+
+
+/*ESTILOS DE LA PAGINA MADRIMONIO*/
+  /*TITULO DE LA SECCIÓN*/
+  #acta2-titulo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 850;
+    font-size: 235%;
+    color: #ff9f15;
+  }
+  
+  
+  /*SUBTITULO DE LA SECCIÓN*/
+  #acta-subtituloM{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+  }
+  
+  
+  /*ESTO ABARCA LOS RENGLONES DEL INICIO DE LA SECCIÓN COMO DESCRIPCIÓN Y ASÍ*/
+  
+      .titulo-civil{ 
+        margin-left: 15%;
+        font-size: 250%;
+        font-family: system-ui, sans-serif;
+        font-weight: bold; 
+      }
+  
+  
+      .info-civil,
+      .info-civil2 {
+         color: black;
+         margin-left: 5%;
+         font-size: 107%;
+         font-family: 'Lucida Sans', sans-serif;
+        }
+  
+  
+      .info-civil2 {
+        margin-top: 0%;
+       }
+  
+  
+    .subtituloM {
+        color: black;
+        font-size: 125%;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-left: -49%; 
+    }
+  
+   
+    @media screen and (max-width: 768px) {
+      .subtituloM {
+          margin-left: 0%; 
+          font-size: 110%; 
+          text-align: center; 
+      }
+    }
+  
+  
+    @media screen and (max-width: 480px) {
+      .subtituloM {
+          margin-left: 5%; 
+          font-size: 100%; 
+          text-align: justify; 
+      }
+    }
+  
+  
+      .subtituloM:hover,
+      .subtituloM:focus { 
+        color: #4c9e0d; 
+        text-decoration: none; 
+      }
+  
+  
+       /*ARREGLA AMBOS TOGGLES CON EL "INFO"*/
+  
+    
+    .toggle-button {
+      font-size: 18px; 
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  
+    .infoM {
+      display: none; 
+      padding: 10px;
+      border: 2px solid #fd7e14 ;
+      width: 60%; 
+      margin: auto; 
+    }
+  
+    
+    @media screen and (max-width: 768px) {
+      .toggle-button {
+        font-size: 16px; 
+        width: 100%; 
+      }
+  
+      .infoM {
+        width: 80%; 
+        text-align: justify; 
+      }
+    }
+  
+   
+    @media screen and (max-width: 480px) {
+      .toggle-button {
+        font-size: 14px; 
+        padding: 5px; 
+      }
+  
+      .infoM {
+        width: 90%; 
+        text-align: justify; 
+        font-size: 14px; 
+      }
+    }
+  
+  
+    
+  /*DA EL ESTILO AL TITULO DEL SEGUNDO TOGGLE*/
+  /* Estilo general (pantallas grandes) */
+  .soli-matrimonio {
+      color: #4c9e0d;
+      font-weight: 500;
+      font-size: 30px;
+      text-align: left;
+  }
+  
+  .listado-civil {
+      color: #17a2b8;
+      margin-left: 10%; /* Valor inicial (ajustado) */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 800;
+      font-size: 30px;
+      text-align: center;
+  }
+  
+  /* Pantallas medianas (tabletas) */
+  @media screen and (max-width: 768px) {
+      .soli-matrimonio, .listado-civil {
+          margin-left: 5%; /* Reduce el margen */
+          font-size: 16px; /* Ajusta tamaño de fuente */
+      }
+  }
+  
+  /* Pantallas pequeñas (móviles) */
+  @media screen and (max-width: 480px) {
+      .soli-matrimonio, .listado-civil {
+          margin-left: 2%; /* Asegura que no desborde */
+          font-size: 14px; /* Reduce el tamaño del texto */
+          text-align: left; /* Ajusta alineación si es necesario */
+      }
+  }
+  
+  
+  
+  /*DA ESTILO A LA DESCRIPCIÓN DEL SEGUNDO TOGGLE*/
+  
+  .descripcionM,
+  .descripcionM2{
+      color: black;
+         margin-left: 2%;
+         font-size: 100%;
+         text-align: left;
+  }
+  
+
+  .descripcion-tituloM{
+    color: #000;
+    text-align: left;
+    font-size: 150%;
+  }
+  
+.info-solicitud{
+  color: black;
+  text-align: left;
+  font-size: 150%;
+
+}
+
+
+
+
+
+
+
+/*ESTILOS DE LA PAGINA DE DEFUNCION*/
+#info1{
+    display: none; 
+    padding: 10px;
+    border: 2px solid blue;
+    width: 600%; 
+    margin: auto; 
+  }
+
+#info2{
+    display: none; 
+    padding: 10px;
+    border: 2px solid blue;
+    width: 600%; 
+    margin: auto; 
+  }
+
+.titulo1-defuncion{
+  color:  #fd7e14;
+}
+
+#p-descripcion{
+  color: black;
+  text-align: left;
+  font-size: 90%;
+}
+
+.titulo-defuncion {
+  color: rgb(8, 191, 204);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+
+}
+
+.titulo-defuncion:hover,
+.titulo-defuncion:focus {
+  color: green;
+  text-decoration: none; 
+  
+}
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS E LA PAGINA RECONOCIMIENTOS*/
+    /*TITULO DE LA SECCIÓN*/
+    #reco-titulo{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 850;
+      font-size: 235%;
+    }
+    
+    
+
+    
+    /*ESTO ABARCA LOS RENGLONES DEL INICIO DE LA SECCIÓN COMO DESCRIPCIÓN Y ASÍ*/
+    
+        .titulo-reco{ 
+          margin-left: 15%;
+          font-size: 170%;
+          font-family: system-ui, sans-serif;
+          font-weight: bold; 
+        }
+    
+    
+        .info-reconoce,
+        .info-reconoce2 {
+           color: rgb(91, 88, 88);
+           margin-left: 5%;
+           font-size: 107%;
+           font-family: 'Lucida Sans', sans-serif;
+          }
+    
+    
+        .info-reconoce2 {
+          margin-top: 0%;
+         }
+    
+    
+      .subtitulo {
+          color: #434343;
+          font-size: 123%;
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: bold;
+          margin-left: -49%; 
+      }
+    
+     
+      @media screen and (max-width: 768px) {
+        .subtitulo {
+            margin-left: 0%; 
+            font-size: 110%; 
+            text-align: center; 
+        }
+      }
+    
+    
+      @media screen and (max-width: 480px) {
+        .subtitulo {
+            margin-left: 5%; 
+            font-size: 100%; 
+            text-align: justify; 
+        }
+      }
+    
+    
+        .subtitulo:hover,
+        .subtitulo:focus { 
+          color: #3e87ff; 
+          text-decoration: none; 
+        }
+    
+    /*TITULO DEL PRIMER TOGGLE*/
+    
+        .title-sectionde {
+           color: #76cbff; 
+           font-size: 110%;
+           }
+    
+    
+         /*ARREGLA AMBOS TOGGLES CON EL "INFO"*/
+    
+      
+      .toggle-button {
+        font-size: 18px; 
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    
+      .info-reconocimiento {
+        display: none; 
+        padding: 10px;
+        border: 2px solid black;
+        width: 60%; 
+        margin: auto; 
+      }
+    
+      
+      @media screen and (max-width: 768px) {
+        .toggle-button {
+          font-size: 16px; 
+          width: 100%; 
+        }
+    
+        .info {
+          width: 80%; 
+          text-align: justify; 
+        }
+      }
+    
+     
+      @media screen and (max-width: 480px) {
+        .toggle-button {
+          font-size: 14px; 
+          padding: 5px; 
+        }
+    
+        .info {
+          width: 90%; 
+          text-align: justify; 
+          font-size: 14px; 
+        }
+      }
+    
+    
+      
+    /*DA EL ESTILO AL TITULO DEL SEGUNDO TOGGLE*/
+    /* Estilo general (pantallas grandes) */
+ 
+    .listado-reconocimiento {
+        color:  #17a2b8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    /* Pantallas medianas (tabletas) */
+    @media screen and (max-width: 768px) {
+        .soli-reconocimiento, .listado-reconocimiento {
+            margin-left: 5%; /* Reduce el margen */
+            font-size: 16px; /* Ajusta tamaño de fuente */
+        }
+    }
+    
+    /* Pantallas pequeñas (móviles) */
+    @media screen and (max-width: 480px) {
+        .soli-reconocimiento, .listado-reconocimiento {
+            margin-left: 2%; /* Asegura que no desborde */
+            font-size: 14px; /* Reduce el tamaño del texto */
+            text-align: left; /* Ajusta alineación si es necesario */
+        }
+    }
+    
+    
+    
+    /*DA ESTILO A LA DESCRIPCIÓN DEL SEGUNDO TOGGLE*/
+    
+    .descripcion-reco,
+    .descripcion2-reco{
+        color: rgb(71, 71, 71);
+           margin-left: 2%;
+           font-size: 89%;
+           font-family: 'Lucida Sans', sans-serif;
+           text-align: left;
+    }
+    
+
+    
+         .sector1-reco{
+          color: #4c9e0d;
+          font-size: 150%;
+          text-align: left;
+        }
+        
+        .resaltar-reco{
+        color: black;
+        font-size: 100%;
+        text-align: left;
+        }
+        
+        #reco-descripcion{
+          color: #000;
+          text-align: left;
+          font-size: 120%;
+        }
+
+        .title-sectionnre{
+          color: black;
+          font-size: 150%;
+
+        }
+ 
+        .tramite-reco{
+          color: #000;
+          font-size: 120%;
+        }
+
+
+
+        
+        /*TABLA DE LA PAGINA REGISTRO*/
+        .tabla-registro {
+          width: 100%; /* Se ajusta al 100% del contenedor */
+          max-width: 600px; /* Mantiene el tamaño máximo de 600px */
+          cursor: pointer;
+          color: black;
+          margin: 0 auto; /* Centra la tabla en pantallas más grandes */
+        }
+        
+        .titulo-tabla {
+          background-color: #4c9e0d;
+          color: white;
+          font-size: 2vw; /* Utiliza un tamaño relativo al ancho de la ventana */
+          padding: 10px;
+          text-align: center;
+        }
+        
+        .info-tabla {
+          color: black;
+          font-size: 1rem; /* Utiliza un tamaño relativo */
+          padding: 10px;
+        }
+        
+        /* Media Query para pantallas pequeñas (por ejemplo, móviles) */
+        @media (max-width: 768px) {
+          .titulo-tabla {
+            font-size: 8vw; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+          }
+        
+          .tabla-registro {
+            padding: 10px; /* Agrega algo de espacio alrededor de la tabla */
+          }
+        
+          .info-tabla {
+            font-size: 1rem; /* Ajusta el tamaño del texto */
+          }
+        }
+        
+        /* Media Query para pantallas muy pequeñas (por ejemplo, dispositivos móviles en vertical) */
+        @media (max-width: 480px) {
+          .titulo-tabla {
+            font-size: 10vw; /* Aumenta el tamaño de la fuente para pantallas aún más pequeñas */
+          }
+        
+          .tabla-registro {
+            padding: 5px; /* Menos relleno en pantallas pequeñas */
+          }
+        
+          .info-tabla {
+            font-size: 0.9rem; /* Ajusta el tamaño del texto */
+          }
+        }
+        

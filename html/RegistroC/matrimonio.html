@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="GodLuckyXVI" content="Gobierno Municipal de Tala, Jalisco">
-  <title>Trámites</title>
+  <title>Matrimonio civil</title>
   <link rel="icon" type="image/png" href="../../assets/img/tala-gob.png">
   <link rel="stylesheet" href="../../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../../assets/css/maicons.css">
@@ -56,7 +56,7 @@
       <div class="container h-100">
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-lg-8">
-            <h1 class="fg-white text-center">Registro Civil</h1>
+            <h1 class="fg-white text-center">Matrimonio civil</h1>
           </div>
         </div>
       </div>
@@ -92,48 +92,53 @@
   </section>
 
 
-</style>
+
 
   <main>
     <br>
     <center><h2 id="acta2-titulo" style="font-size: 235%; color:#F28705;">ACTA DE MATRIMONIO</h2></center>
-    <center><h3 id="acta-subtitulo" style="font-size: 225%; color: #efa133">Matrimonio civil</h3></center> <br><br>
+     <br>
+    <center><h3 id="acta-subtituloM" style="font-size: 225%; color: #F28705">Matrimonio civil</h3></center>
+   
+    <br>
     <p class="titulo-civil">Matrimonio civil</p>
+  
+
     <h6 class="info-civil">El matrimonio es una institución de carácter público e interés social, por medio de la</h6>
     <h6 class="info-civil2">cual dos personas deciden de manera libre para realizar la comunidad de vida, para la</h6>
     <h6 class="info-civil2">búsqueda de su realización personal y la fundación de una familia con respeto, ayuda</h6>
     <h6 class="info-civil2">mutua e igualdad de derechos y obligaciones.</h6>
-    <hr style="width: 70%; height: 2%; color: grey; margin-left: 4%;"> <br><br>
+    <hr style="width: 70%; height: 2%; color: rgb(255, 0, 0); margin-left: 4%;"> <br><br>
 
 
       <!-- Primer toggle -->
       <center>
-        <a href="#" class="subtitulo toggle-button">¿Quién puede solicitar el trámite? <span>&#43;</span><hr id="hr-quien"></a>
+        <a href="#" class="subtituloM toggle-button">¿Quién puede solicitar el trámite? <span>&#43;</span><hr id="hr-quien"></a>
         
-        <div class="info">
-          <p class="title-sectionn">¿Quién puede solicitar el trámite?</p>
+        <div class="infoM">
           
           <ul>
-            <li>Interesado</li>
-      
-  
+            <p class="info-solicitud">° Interesados</p>
           </ul>
         </div> 
       </center>
 
          <!-- Segundo toggle -->
     <center>
-        <br> <a href="#" class="subtitulo toggle-button">Requisitos <span>&#43;</span></a>
-         <div class="info">
+        <br> <a href="#" class="subtituloM toggle-button">Requisitos <span>&#43;</span></a>
+         <div class="infoM">
+          
             <p class="listado-civil">Listado de requisitos</p>
-           <p class="soli-matrimonio">Solicitud de matrimonio</p>
+      <br>
+           <p class="soli-matrimonio">1- Solicitud de matrimonio</p>
            <ul>
            
-             <li>Descripción del documento:</li>
-             <h6 class="descripcion"> Solicitud de matrimonio (anexa para descarga) deberá ser llenada con letra legible y</h6>
-             <h6 class="descripcion2">entregar la documentación requerida por lo menos 10 días antes de la fecha del</h6>
-             <h6 class="descripcion2">matrimonio, fecha y hora que deberá de agendarse conforme a la disponibilidad de</h6>
-             <h6 class="descripcion2">la agenda del oficial.</h6>
+             <P class="descripcion-tituloM">° Descripción del documento:</P>
+             <h6 class="descripcionM">Solicitud de matrimonio (anexa para descarga) deberá ser llenada con letra legible y</h6>
+             <h6 class="descripcionM2">entregar la documentación requerida por lo menos 10 días antes de la fecha del</h6>
+             <h6 class="descripcionM2">matrimonio, fecha y hora que deberá de agendarse conforme a la disponibilidad de</h6>
+             <h6 class="descripcionM2">la agenda del oficial.</h6>
+             <br>
            </ul>
          </div>
        </center> <br><br>
@@ -147,26 +152,26 @@
            
            // Obtener todos los toggles y cerrar los demás
            document.querySelectorAll('.toggle-button').forEach(function(otherToggle) {
-             const otherInfo = otherToggle.nextElementSibling;
+             const otherInfoM = otherToggle.nextElementSibling;
              const otherToggleText = otherToggle.querySelector('span');
              
              if (otherToggle !== toggle) { // Verificar que no es el toggle actual
-               otherInfo.style.display = "none";
+               otherInfoM.style.display = "none";
                otherToggleText.textContent = "+";
                otherToggle.style.color = "#434343";
              }
            });
    
            // Mostrar/ocultar el contenido del toggle actual
-           const info = this.nextElementSibling; // Contenido asociado al toggle
+           const infoM = this.nextElementSibling; // Contenido asociado al toggle
            const toggleText = this.querySelector('span');
    
-           if (info.style.display === "none" || info.style.display === "") {
-             info.style.display = "block";
+           if (infoM.style.display === "none" || infoM.style.display === "") {
+             infoM.style.display = "block";
              toggleText.textContent = "-";
              this.style.color = "#3e87ff";
            } else {
-             info.style.display = "none";
+             infoM.style.display = "none";
              toggleText.textContent = "+";
              this.style.color = "#434343";
            }
