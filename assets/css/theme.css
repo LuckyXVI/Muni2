@@ -3515,3 +3515,75 @@ transition: all 0.3s ease;
           }
         }
         
+
+
+
+
+
+
+
+
+        /*ESTILOS DE LA PAGINA TRAMITES(BOTONES)*/
+      
+/* Estilos básicos */
+.contenedor-botones {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se adapten en varias líneas */
+  justify-content: center;
+  gap: 30px; /* Espaciado entre los botones */
+  padding: 20px;
+}
+
+.boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f0; /* Fondo claro */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px   #17a2b8;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+.boton:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton img {
+  width: 80px; /* Tamaño de los iconos */
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.texto-boton {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Texto oscuro */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Mantiene el color del texto */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedor-botones {
+      flex-direction: column; /* Los botones se apilan en pantallas pequeñas */
+      align-items: center;
+  }
+
+  .boton {
+      width: 90%; /* Los botones ocupan la mayoría del ancho en pantallas pequeñas */
+  }
+}
+
+.titulo-tramites{
+  color: black;
+  font-size: 250%;
+  font-family: Verdana, sans-serif;
+}
