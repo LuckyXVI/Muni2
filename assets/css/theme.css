@@ -3583,7 +3583,29 @@ a {
 }
 
 .titulo-tramites{
-  color: black;
-  font-size: 250%;
+  color:  #fd7e14;
+  font-size: 300%;
   font-family: Verdana, sans-serif;
+}
+
+.linea-tramites {
+  width: 150%; /* Por defecto, ocupa todo el ancho */
+  max-width: 25%; /* Máximo ancho del 25% para pantallas grandes */
+  height: 2px; /* Altura de la línea */
+  background-color: black; /* Color negro */
+  border: none; /* Sin borde */
+  margin: auto; /* Centrará la línea */
+}
+
+/* Ajustes para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .linea-tramites {
+    max-width: 50%; /* Aumenta el ancho máximo para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .linea-tramites {
+    max-width: 75%; /* Aumenta aún más el ancho máximo para pantallas pequeñas */
+  }
 }
